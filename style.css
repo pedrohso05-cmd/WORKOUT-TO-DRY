@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #111, #1e1e24);
+  color: #f5f5f5;
+}
+
+/* Cabeçalho */
+header {
+  background: #ff3c00;
+  color: white;
+  padding: 25px 20px;
+  text-align: center;
+}
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+/* Banner */
+.banner {
+  text-align: center;
+  padding: 50px 20px;
+  background: url('https://images.unsplash.com/photo-1594737625785-c58ef8e53102?ixlib=rb-4.0.3&q=80&w=1080&fit=crop') no-repeat center center/cover;
+  color: white;
+}
+.banner h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.banner p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+.banner .oferta {
+  font-size: 1.2rem;
+  background: rgba(0,0,0,0.6);
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+.banner button {
+  margin-top: 15px;
+}
+
+/* Seções */
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+#quiz-section, #resultado, #feedbacks {
+  background: #1f1f23;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 20px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.5);
+}
+h2 {
+  color: #ff3c00;
+  margin-bottom: 15px;
+}
+
+/* Lista e tabela */
+ol li {
+  margin-bottom: 15px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+table th, table td {
+  border: 1px solid #444;
+  padding: 10px;
+  text-align: center;
+}
+table th {
+  background: #ff3c00;
+}
+
+/* Botões */
+button {
+  padding: 12px 25px;
+  background: #ff3c00;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+button:hover {
+  background: #e63200;
+  transform: scale(1.05);
+}
+
+/* Feedbacks */
+#feedbacks ul {
+  list-style: none;
+  padding: 0;
+}
+#feedbacks li {
+  background: #2b2b31;
+  margin: 10px 0;
+  padding: 15px;
+  border-left: 5px solid #ff3c00;
+  border-radius: 8px;
+  font-style: italic;
+}
+
+/* Preço */
+.preco {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 20px 0;
+  color: #ffd700;
+}
+
+/* Rodapé */
+footer {
+  background: #111;
+  color: #aaa;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+  .banner h2 {
+    font-size: 1.5rem;
+  }
+  .banner p {
+    font-size: 1rem;
+  }
+  button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Workout to Dry</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Workout to Dry</h1>
+    <p>Transforme seu corpo por apenas <strong>R$ 8,90</strong>!</p>
+  </header>
+
+  <!-- Banner com chamada -->
+  <section class="banner">
+    <h2>Treino personalizado de 5 dias + cardio</h2>
+    <p>Comece hoje e veja resultados em poucas semanas.</p>
+    <p class="oferta">🔥 Oferta acaba em: <span id="contador"></span></p>
+    <button onclick="scrollToQuiz()">Começar Agora</button>
+  </section>
+
+  <main>
+    <!-- Quiz -->
+    <section id="quiz-section">
+      <h2>Triagem: Descubra seu nível</h2>
+      <form id="quiz-form">
+        <ol>
+          <li>Você já treinou na academia antes?
+            <br><input type="radio" name="q1" value="sim"> Sim
+            <input type="radio" name="q1" value="nao"> Não
+          </li>
+          <li>Quantos dias por semana você pretende treinar?
+            <br><input type="radio" name="q2" value="3"> 3
+            <input type="radio" name="q2" value="5"> 5
+          </li>
+          <li>Qual seu objetivo principal?
+            <br><input type="radio" name="q3" value="forca"> Força
+            <input type="radio" name="q3" value="hipertrofia"> Hipertrofia
+            <input type="radio" name="q3" value="resistencia"> Resistência
+          </li>
+          <li>Você sente dores ou lesões recentes?
+            <br><input type="radio" name="q4" value="sim"> Sim
+            <input type="radio" name="q4" value="nao"> Não
+          </li>
+          <li>Você prefere treinos curtos ou longos?
+            <br><input type="radio" name="q5" value="curtos"> Curtos
+            <input type="radio" name="q5" value="longos"> Longos
+          </li>
+          <li>Tem facilidade em ganhar massa muscular?
+            <br><input type="radio" name="q6" value="sim"> Sim
+            <input type="radio" name="q6" value="nao"> Não
+          </li>
+          <li>Você gosta de exercícios de cardio?
+            <br><input type="radio" name="q7" value="sim"> Sim
+            <input type="radio" name="q7" value="nao"> Não
+          </li>
+          <li>Quantas horas de sono por noite em média?
+            <br><input type="radio" name="q8" value="4-6"> 4-6h
+            <input type="radio" name="q8" value="7-8"> 7-8h
+            <input type="radio" name="q8" value="9+"> 9+
+          </li>
+          <li>Você tem acesso a equipamentos de academia?
+            <br><input type="radio" name="q9" value="sim"> Sim
+            <input type="radio" name="q9" value="nao"> Não
+          </li>
+          <li>Deseja ganhar massa ou perder gordura primeiro?
+            <br><input type="radio" name="q10" value="massa"> Massa
+            <input type="radio" name="q10" value="gordura"> Gordura
+          </li>
+        </ol>
+        <button type="submit">Finalizar Teste</button>
+      </form>
+    </section>
+
+    <!-- Resultado -->
+    <section id="resultado" style="display:none;">
+      <h2>Seu Treino Personalizado</h2>
+      <p>Baseado nas suas respostas, aqui está seu plano de treino <strong>5x por semana + cardio</strong>:</p>
+
+      <table>
+        <tr><th>Dia</th><th>Treino</th></tr>
+        <tr><td>Segunda</td><td>Peito + Tríceps</td></tr>
+        <tr><td>Terça</td><td>Costas + Bíceps</td></tr>
+        <tr><td>Quarta</td><td>Pernas + Abdômen</td></tr>
+        <tr><td>Quinta</td><td>Ombros + Trapézio</td></tr>
+        <tr><td>Sexta</td><td>Full Body (leve)</td></tr>
+        <tr><td>Sábado ou Domingo</td><td>Cardio (30-40min corrida/bike)</td></tr>
+      </table>
+
+      <p class="preco">👉 Kit Treino Completo por apenas <strong>R$ 8,90</strong></p>
+      <button onclick="alert('Pagamento em breve disponível!')">Adquirir meu Treino</button>
+    </section>
+
+    <!-- Feedbacks -->
+    <section id="feedbacks">
+      <h2>O que nossos clientes dizem</h2>
+      <ul>
+        <li>"Em apenas 2 semanas já senti diferença na disposição! Valeu cada centavo." – João S.</li>
+        <li>"O treino é simples de seguir e já estou vendo resultado no espelho." – Maria P.</li>
+        <li>"Nunca consegui treinar direito sozinho, agora estou motivado!" – Lucas A.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Workout to Dry © 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
